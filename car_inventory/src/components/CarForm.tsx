@@ -50,7 +50,7 @@ const CarForm = (props: CarFormProps) => {
           <Input {...register('Model')} name = 'Model' placeholder="Model"/>
         </div>
         <div>
-          <label htmlFor="Year">Year Number</label>
+          <label htmlFor="Year">Year</label>
           <Input {...register('Year')} name = 'Year' placeholder="Year"/>
         </div>
         <div>
