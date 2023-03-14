@@ -1,11 +1,16 @@
 let token = '7fe450dd7c65b0a19eb88c30b0572f45255af803b6eb1b44'
 
 export const server_calls = {
+
     get: async () => {
         const response = await fetch(`https://balanced-exuberant-cross.glitch.me/api/car`,
         {
             method: 'GET',
             mode: "cors",
+            headers: {
+                'Content-Type': 'application/json',
+                'x-access-token': `Bearer ${token}`
+            },
         });
 
         if (!response.ok){
@@ -20,13 +25,14 @@ export const server_calls = {
         {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'x-access-token': `Bearer ${token}`
             },
             body: JSON.stringify(data)
         })
 
         if (!response.ok) {
-            throw new Error('Failed to creatre new data on the server')
+            throw new Error('Failed to create new data on the server')
         }
 
         return await response.json()
@@ -38,6 +44,7 @@ export const server_calls = {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'x-access-token': `Bearer ${token}`
             },
             body: JSON.stringify(data)
         })
@@ -55,7 +62,9 @@ export const server_calls = {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
+                'x-access-token': `Bearer ${token}`
             },
+            body: JSON.stringify(data)
         })
 
         if (!response.ok){

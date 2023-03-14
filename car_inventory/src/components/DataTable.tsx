@@ -54,10 +54,10 @@ function DataTable() {
             <Button onClick={deleteData} className='p-3 bg-slate-300 m-3 rounded hover:bg-slate-800 hover:text-white'>Delete</Button>
         </div>
         <div className={open ? 'hidden':'container mx-10 my-5 flex flex-col'}
-            style={{height: 400, width: '100%'}}
+            style={{height: 500, width: '100%'}}
             >
                 <h2 className="p-3 bg-slate-300 my-2 rounded">My Cars</h2>
-                <DataGrid rows={carData} columns={columns} rowsPerPageOptions={[5]}
+                <DataGrid rows={carData} columns={columns} rowsPerPageOptions={[25,50,100]}
                 checkboxSelection={true}
                 onSelectionModelChange={ (item:any ) => {
                     setSelectionModel(item)
@@ -67,5 +67,6 @@ function DataTable() {
     </>
   )
 }
+
 
 export default DataTable

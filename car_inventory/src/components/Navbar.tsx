@@ -53,25 +53,9 @@ function Navbar() {
           </Button>
           <Button className="p-3 m-5 bg-teal-400 justify-center">
             <div>
-              <Link to="/about" className='flex place-items-center mt-4 lg:inline-block lg:mt-0
-              text-teal-200 hover:text-white mr-4'>
-                  About
-                </Link>
-            </div>
-          </Button>
-          <Button className="p-3 m-5 bg-teal-400 justify-center">
-            <div>
               <Link to="/dashboard" className='flex place-items-center mt-4 lg:inline-block lg:mt-0
               text-teal-200 hover:text-white mr-4'>
                   Dashboard
-                </Link>
-            </div>
-          </Button>
-          <Button className="p-3 m-5 bg-teal-400 justify-center">
-            <div>
-              <Link to="/contact" className='flex place-items-center mt-4 lg:inline-block lg:mt-0
-              text-teal-200 hover:text-white mr-4'>
-                  Contact
                 </Link>
             </div>
           </Button>

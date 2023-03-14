@@ -13,6 +13,8 @@ interface CarFormProps {
   data?: {}
 }
 
+
+
 const CarForm = (props: CarFormProps) => {
   const { register, handleSubmit } = useForm ({})
   const dispatch = useDispatch();
@@ -57,7 +59,6 @@ const CarForm = (props: CarFormProps) => {
           <label htmlFor="Color">Color</label>
           <Input {...register('Color')} name = 'Color' placeholder="Color"/>
         </div>
-      </form>
       <div className="flex p-1">
         <Button
           className='flex justify-start m-3 bg-slate-300 p-2 rounded hover:bg-slate-800 text-white'
@@ -65,6 +66,7 @@ const CarForm = (props: CarFormProps) => {
           Submit
         </Button>
       </div>
+      </form>
     </div>
   )
 }
