@@ -6,11 +6,11 @@ import { useGetData } from '../custom-hooks/FetchData';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 
 const columns: GridColDef[] = [
-    { field: 'id', headerName: "ID", width: 90, hideable: true},
-    {field: 'Make', headerName: 'Make', flex: 1},
-    {field: 'Model', headerName: 'Model', flex: 1},
-    {field: 'Year', headerName: 'Year', flex: 1},
-    {field: 'Color', headerName: 'Color', flex: 2}
+    { field: 'id', headerName: "ID", width: 90, hide: true},
+    {field: 'make', headerName: 'Make', flex: 1},
+    {field: 'model', headerName: 'Model', flex: 1},
+    {field: 'year', headerName: 'Year', flex: 1},
+    {field: 'color', headerName: 'Color', flex: 2}
 ]
 
 function DataTable() {

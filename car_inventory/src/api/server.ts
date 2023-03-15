@@ -39,7 +39,7 @@ export const server_calls = {
     },
 
     update: async (id:string, data: any = {}) => {
-        const response = await fetch(`https://balanced-exuberant-cross.glitch.me/api/car${id}`,
+        const response = await fetch(`https://balanced-exuberant-cross.glitch.me/api/car/${id}`,
         {
             method: 'POST',
             headers: {
@@ -57,7 +57,7 @@ export const server_calls = {
     },
 
     delete: async (id:string, data: any = {}) => {
-        const response = await fetch(`https://balanced-exuberant-cross.glitch.me/api/car${id}`,
+        const response = await fetch(`https://balanced-exuberant-cross.glitch.me/api/car/${id}`,
         {
             method: 'DELETE',
             headers: {

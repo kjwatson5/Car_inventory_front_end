@@ -3,10 +3,10 @@ import { createSlice } from "@reduxjs/toolkit"
 const rootSlice = createSlice({
     name: "root",
     initialState: {
-        make: "Make",
-        model: 'Model',
-        year: 'Year',
-        color: 'Color',
+        make: "make",
+        model: 'model',
+        year: 'year',
+        color: 'color',
     },
     reducers: {
         // Action is submitted elsewhere - written to state.make
